@@ -9,7 +9,7 @@ export default function Cart ({showModal, toggle}) {
 
   return (
     showModal && (
-      <div className="flex-col flex items-center fixed inset-0 left-1/2 bg-white dark:bg-gray-200/[.8] backdrop-blur-sm gap-8  p-10  text-black dark:text-black font-normal uppercase text-sm overflow-y-scroll no-scrollbar">
+      <div className=" flex-col flex items-center fixed inset-0 left-1/2 bg-white dark:bg-gray-200/[.8] backdrop-blur-sm gap-8  p-10  text-black dark:text-black font-normal uppercase text-sm overflow-y-scroll no-scrollbar">
         <h1 className="text-2xl font-bold">Cart</h1>
         <div className="absolute right-16 top-10">
           <button

@@ -24,13 +24,13 @@ export default function Products() {
 
   return (
     <div className='flex flex-col justify-center bg-black-100'>
-      <div className='rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex justify-between items-center px-20 py-0'>
+      <div className='rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 flex justify-between items-center px-20 py-0 fixed top-0 w-[1220px]'>
         <h1 className='text-4xl uppercase font-bold mt-10 text-center mb-10'>CENTRO FASHION</h1>
-        {!showModal && <button className='px-4 py-2 bg-orange-400 text-white text-xs font-bold uppercase rounded hover:bg-orange-500 focus:outline-none focus:bg-orange-600'
+        {!showModal && <button className=' px-4 py-2 bg-orange-400 text-white text-xs font-bold uppercase rounded hover:bg-orange-500 focus:outline-none focus:bg-orange-600'
           onClick={toggle}
         >Cart ({cartItems.length})</button>}
       </div>
-      <div className='w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10'>
+      <div className='w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-32'>
         {
           products.map(product => (
             <div key={product.id} className='bg-white shadow-2xl rounded-lg px-10 py-10'>
